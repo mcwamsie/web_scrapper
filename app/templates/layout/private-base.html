@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    {% block title %}{% endblock %}
+    <link rel="stylesheet" href="{% static "assets/bootstrap/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "assets/css/styles.css" %}">
+<style>
+    span.asteriskField{
+        color: var(--danger);
+        vertical-align: middle;
+        margin-left: 3px;
+    }
+</style>
+</head>
+<body>
+{% include "layout/navbar.layout.html" %}
+<main class="p-3">
+
+    <div class="container">
+        <div class="mb-4 mb-md-5 row no-gutters justify-content-between align-items-center">
+            <div class="col-12 col-sm-auto mb-3 mb-sm-0">
+                {% block header %}{% endblock %}
+            </div>
+            {% if request.user.is_authenticated %}
+                <div class="col-12 col-sm-auto">
+                    <form class="" action="{% url "SearchView" %}">
+                        <input name="q" style="min-width: 240px" class="form-control" type="search" placeholder="Search Here"/>
+                    </form>
+                </div>
+            {% endif %}
+
+        </div>
+        {% block content %}{% endblock %}
+    </div>
+</main>
+<script src="{% static "assets/js/jquery.min.js" %}"></script>
+<script src="{% static "assets/bootstrap/js/bootstrap.min.js" %}"></script>
+<script src="{% static "assets/js/sweat-alert.js" %}"></script>
+<script>
+    {% if messages %}
+         console.log('There is a message')
+        {% for message in messages %}
+            Swal.fire(
+                                'Information',
+                                "{{message}}",
+                                '{{ message.tags }}'
+                            )
+        {% endfor %}
+    {% endif %}
+</script>
+{% block scripts %}{% endblock %}
+</body>
+
+</html>

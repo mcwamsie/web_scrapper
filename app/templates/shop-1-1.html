@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>webscrapper</title>
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark" id="main-navbar">
+        <div class="container-fluid"><a class="navbar-brand" href="#">[APP NAME]</a>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">ShopS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="com.html">Compare</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                </ul>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown"><a class="dropdown-toggle nav-link d-flex align-items-center" aria-expanded="false" data-toggle="dropdown" id="userprofile-btn" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-person-circle">
+                            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"></path>
+                            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path>
+                        </svg><span class="ml-2 d-none d-sm-block">Username</span></a>
+                    <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-person-circle">
+                                <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"></path>
+                                <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                                <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path>
+                            </svg><span class="ml-2">Profile</span></a><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-lock-fill">
+                                <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"></path>
+                                <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"></path>
+                            </svg><span class="ml-2">Logout</span></a></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="p-3">
+        <div class="container">
+            <div class="page-title mb-3">
+                <h5>TV Sales Results</h5>
+                <p>Scrapped Results</p>
+            </div>
+            <div class="row">
+                <div class="col order-1 order-md-2">
+                    <div class="bg-dark p-2">
+                        <h6 class="mb-0 text-white">TV Sales: Scrap Results</h6>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                            <div class="card product-card">
+                                <div class="card-body d-flex flex-column p-0 position-relative"><img class="img-fluid w-100 product-card-img" src="../static/assets/img/11421845_hi.webp">
+                                    <div class="product-card-overlay">
+                                        <div class="product-card-action-btn-container"><a class="product-card-action-btn arrows" href="com.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-arrow-left-right">
+                                                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"></path>
+                                                </svg></a><a class="product-card-action-btn eye" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-eye-fill">
+                                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+                                                    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path>
+                                                </svg></a><a class="product-card-action-btn heart" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-heart-fill">
+                                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"></path>
+                                                </svg></a></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center p-2">
+                                        <div>
+                                            <div class="product-card-shop-container"><a class="product-card-shop-link" href="#">EDGARS</a></div>
+                                            <div class="product-card-item-container"><a class="product-card-item-link" href="#">LADIES LEGGINGS</a></div>
+                                        </div><span class="product-card-price">25USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-4">
+                            <div class="card product-card">
+                                <div class="card-body d-flex flex-column p-0 position-relative"><img class="img-fluid w-100 product-card-img" src="../static/assets/img/12809716_hi.webp">
+                                    <div class="product-card-overlay">
+                                        <div class="product-card-action-btn-container"><a class="product-card-action-btn arrows" href="com.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-arrow-left-right">
+                                                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"></path>
+                                                </svg></a><a class="product-card-action-btn eye" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-eye-fill">
+                                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+                                                    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path>
+                                                </svg></a><a class="product-card-action-btn heart" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-heart-fill">
+                                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"></path>
+                                                </svg></a></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center p-2">
+                                        <div>
+                                            <div class="product-card-shop-container"><a class="product-card-shop-link" href="#">EDGARS</a></div>
+                                            <div class="product-card-item-container"><a class="product-card-item-link" href="#">LADIES BIKER LEGGINGS</a></div>
+                                        </div><span class="product-card-price">25USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../static/assets/js/jquery.min.js"></script>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
